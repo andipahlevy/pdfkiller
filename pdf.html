@@ -7,16 +7,17 @@
 	<title>Document</title>
 </head>
 <body>
-<script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+<script src="pdf.js"></script>
+<link rel="stylesheet" href="bootstrap.min.css">
+<canvas id="the-canvas" style="width:100%;height:auto;"></canvas>
 
-<div>
-  <button id="prev">Previous</button>
-  <button id="next">Next</button>
+<div style="text-align:center;">
+  <button id="prev" class="btn btn-primary">Previous</button>
   &nbsp; &nbsp;
   <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+  &nbsp; &nbsp;
+  <button id="next" class="btn  btn-primary">Next</button>
 </div>
-
-<canvas id="the-canvas" style="width:100%;"></canvas>
 
 <script>
 var url = 'files/Anak Kecil dengan Biolanya.pdf';
@@ -25,7 +26,7 @@ var url = 'files/Anak Kecil dengan Biolanya.pdf';
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
 
 // The workerSrc property shall be specified.
-pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.worker.js';
 
 var pdfDoc = null,
     pageNum = 1,
