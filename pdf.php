@@ -12,7 +12,7 @@
 
 <canvas id="the-canvas" style="width:100%;height:auto;"></canvas>
 
-<div style="text-align:center;">
+<div style="text-align:center; margin-top:30px;">
   <button id="prev" class="btn btn-primary">Previous</button>
   &nbsp; &nbsp;
   <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
