@@ -7,7 +7,7 @@
 	<title>Document</title>
 </head>
 <body>
-<script src="pdf.js"></script>
+<script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
 <link rel="stylesheet" href="bootstrap.min.css">
 
 <canvas id="the-canvas" style="width:100%;height:auto;"></canvas>
@@ -27,7 +27,7 @@ var url = 'files/<?php echo $_GET['file'] ?>';
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
 
 // The workerSrc property shall be specified.
-pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.worker.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
 
 var pdfDoc = null,
     pageNum = 1,
