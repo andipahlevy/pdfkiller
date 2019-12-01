@@ -20,7 +20,7 @@
 </div>
 
 <script>
-var url = 'files/Anak Kecil dengan Biolanya.pdf';
+var url = 'files/<?php echo $_GET['file'] ?>';
 
 // Loaded via <script> tag, create shortcut to access PDF.js exports.
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
