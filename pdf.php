@@ -9,6 +9,15 @@
 <body>
 <script src="pdf.js"></script>
 <link rel="stylesheet" href="bootstrap.min.css">
+
+<center>
+	<div class="row">
+		<div class="col-md-12">
+			<h3><?php echo $_GET['name'] ?></h3>
+		</div>
+	</div>
+</center>
+
 <canvas id="the-canvas" style="width:100%;height:auto;"></canvas>
 
 <div style="text-align:center;">
